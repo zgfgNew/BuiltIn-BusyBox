@@ -1,0 +1,2414 @@
++ whoami
+root
++ magisk -c
+/data/adb/modules/BuiltIn-BusyBox/post-fs-data.sh: line 17: magisk: not found
++ echo true
+true
++ getprop ro.product.cpu.abi
+arm64-v8a
++ getprop ro.product.cpu.abilist
+arm64-v8a,armeabi-v7a,armeabi
++ rm -rf /data/adb/modules/BuiltIn-BusyBox/system
++ SDIR=/system/xbin
++ '[' '!' -d /system/xbin ]
++ BBDIR=/data/adb/modules/BuiltIn-BusyBox/system/xbin
++ mkdir -p /data/adb/modules/BuiltIn-BusyBox/system/xbin
++ cd /data/adb/modules/BuiltIn-BusyBox/system/xbin
++ pwd
+/data/adb/modules/BuiltIn-BusyBox/system/xbin
++ TBDIR=/data/adb/modules/ToyBox-Ext//system/xbin
++ BB=busybox
++ BBBIN=/data/adb/modules/BuiltIn-BusyBox/busybox
++ '[' -f /data/adb/modules/BuiltIn-BusyBox/busybox ]
++ '[' '!' -x /data/adb/modules/BuiltIn-BusyBox/busybox ]
++ BBBIN=/data/adb/magisk/busybox
++ '[' '!' -x /data/adb/magisk/busybox ]
++ BBBIN=/data/adb/ap/bin/busybox
++ /data/adb/ap/bin/busybox --list
++ wc -l
+362
++ /data/adb/ap/bin/busybox --list
++ Applets='busybox
+[
+[[
+acpid
+adjtimex
+ar
+arch
+arp
+arping
+ascii
+ash
+awk
+base32
+base64
+basename
+bbconfig
+beep
+blkdiscard
+blkid
+blockdev
+brctl
+bunzip2
+bzcat
+bzip2
+cal
+cat
+chat
+chattr
+chcon
+chgrp
+chmod
+chown
+chroot
+chrt
+chvt
+cksum
+clear
+cmp
+comm
+conspy
+cp
+cpio
+crc32
+crond
+crontab
+cttyhack
+cut
+date
+dc
+dd
+deallocvt
+depmod
+devmem
+df
+dhcprelay
+diff
+dirname
+dmesg
+dnsd
+dnsdomainname
+dos2unix
+du
+dumpkmap
+dumpleases
+echo
+ed
+egrep
+eject
+env
+ether-wake
+expand
+expr
+factor
+fakeidentd
+false
+fatattr
+fbset
+fbsplash
+fdflush
+fdformat
+fdisk
+fgconsole
+fgrep
+find
+findfs
+flash_eraseall
+flash_lock
+flash_unlock
+flock
+fold
+free
+freeramdisk
+fsck
+fsck.minix
+fsfreeze
+fstrim
+fsync
+ftpd
+ftpget
+ftpput
+fuser
+getenforce
+getopt
+grep
+groups
+gunzip
+gzip
+hd
+hdparm
+head
+hexdump
+hexedit
+hostname
+httpd
+hush
+hwclock
+id
+ifconfig
+ifdown
+ifenslave
+ifplugd
+ifup
+inetd
+inotifyd
+insmod
+install
+ionice
+iostat
+ip
+ipaddr
+ipcalc
+ipcrm
+ipcs
+iplink
+ipneigh
+iproute
+iprule
+iptunnel
+kbd_mode
+kill
+killall
+killall5
+klogd
+less
+link
+ln
+loadfont
+loadkmap
+logread
+losetup
+ls
+lsattr
+lsmod
+lsof
+lspci
+lsscsi
+lsusb
+lzcat
+lzma
+lzop
+lzopcat
+makedevs
+makemime
+man
+md5sum
+mesg
+microcom
+mim
+mkdir
+mkdosfs
+mke2fs
+mkfifo
+mkfs.ext2
+mkfs.minix
+mkfs.reiser
+mkfs.vfat
+mknod
+mkswap
+mktemp
+modinfo
+modprobe
+more
+mount
+mountpoint
+mpstat
+mv
+nameif
+nanddump
+nandwrite
+nbd-client
+nc
+netstat
+nice
+nl
+nmeter
+nohup
+nologin
+nsenter
+nslookup
+nuke
+od
+openvt
+partprobe
+paste
+patch
+pgrep
+pidof
+ping
+ping6
+pipe_progress
+pivot_root
+pkill
+pmap
+popmaildir
+poweroff
+powertop
+printenv
+printf
+ps
+pscan
+pstree
+pwd
+pwdx
+raidautorun
+rdate
+rdev
+readlink
+readprofile
+realpath
+reboot
+reformime
+renice
+reset
+resize
+resume
+rev
+rfkill
+rm
+rmdir
+rmmod
+route
+rtcwake
+run-init
+run-parts
+runcon
+rx
+script
+scriptreplay
+sed
+seedrng
+selinuxenabled
+sendmail
+seq
+sestatus
+setconsole
+setenforce
+setfattr
+setfont
+setkeycodes
+setlogcons
+setpriv
+setserial
+setsid
+setuidgid
+sh
+sha1sum
+sha256sum
+sha3sum
+sha512sum
+showkey
+shred
+shuf
+slattach
+sleep
+smemcap
+sort
+split
+ssl_client
+start-stop-daemon
+stat
+strings
+stty
+sum
+svc
+svok
+swapoff
+swapon
+switch_root
+sync
+sysctl
+syslogd
+tac
+tail
+tar
+tc
+tcpsvd
+tee
+telnet
+telnetd
+test
+tftp
+tftpd
+time
+timeout
+top
+touch
+tr
+traceroute
+traceroute6
+tree
+true
+truncate
+ts
+tsort
+tty
+ttysize
+tunctl
+tune2fs
+ubiattach
+ubidetach
+ubimkvol
+ubirename
+ubirmvol
+ubirsvol
+ubiupdatevol
+udhcpc
+udhcpc6
+udhcpd
+udpsvd
+uevent
+umount
+uname
+uncompress
+unexpand
+uniq
+unix2dos
+unlink
+unlzma
+unlzop
+unshare
+unxz
+unzip
+uptime
+usleep
+uudecode
+uuencode
+vconfig
+vi
+volname
+watch
+watchdog
+wc
+wget
+which
+whoami
+whois
+xargs
+xxd
+xz
+xzcat
+yes
+zcat
+zcip'
++ '[' '!' -x /system/xbin/busybox ]
++ ln -s /data/adb/ap/bin/busybox busybox
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/busybox
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/busybox ]
++ '[' '!' -x '/system/xbin/[' ]
++ ln -s /data/adb/ap/bin/busybox '['
++ Target='/data/adb/modules/ToyBox-Ext//system/xbin/['
++ '[' -h '/data/adb/modules/ToyBox-Ext//system/xbin/[' ]
++ rm -f '/data/adb/modules/ToyBox-Ext//system/xbin/['
++ '[' '!' -x '/system/xbin/[[' ]
++ ln -s /data/adb/ap/bin/busybox '[['
++ Target='/data/adb/modules/ToyBox-Ext//system/xbin/[['
++ '[' -h '/data/adb/modules/ToyBox-Ext//system/xbin/[[' ]
++ '[' '!' -x /system/xbin/acpid ]
++ ln -s /data/adb/ap/bin/busybox acpid
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/acpid
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/acpid ]
++ '[' '!' -x /system/xbin/adjtimex ]
++ ln -s /data/adb/ap/bin/busybox adjtimex
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/adjtimex
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/adjtimex ]
++ '[' '!' -x /system/xbin/ar ]
++ ln -s /data/adb/ap/bin/busybox ar
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/ar
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/ar ]
++ '[' '!' -x /system/xbin/arch ]
++ ln -s /data/adb/ap/bin/busybox arch
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/arch
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/arch ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/arch
++ '[' '!' -x /system/xbin/arp ]
++ ln -s /data/adb/ap/bin/busybox arp
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/arp
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/arp ]
++ '[' '!' -x /system/xbin/arping ]
++ ln -s /data/adb/ap/bin/busybox arping
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/arping
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/arping ]
++ '[' '!' -x /system/xbin/ascii ]
++ ln -s /data/adb/ap/bin/busybox ascii
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/ascii
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/ascii ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/ascii
++ '[' '!' -x /system/xbin/ash ]
++ ln -s /data/adb/ap/bin/busybox ash
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/ash
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/ash ]
++ '[' '!' -x /system/xbin/awk ]
++ ln -s /data/adb/ap/bin/busybox awk
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/awk
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/awk ]
++ '[' '!' -x /system/xbin/base32 ]
++ ln -s /data/adb/ap/bin/busybox base32
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/base32
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/base32 ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/base32
++ '[' '!' -x /system/xbin/base64 ]
++ ln -s /data/adb/ap/bin/busybox base64
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/base64
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/base64 ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/base64
++ '[' '!' -x /system/xbin/basename ]
++ ln -s /data/adb/ap/bin/busybox basename
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/basename
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/basename ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/basename
++ '[' '!' -x /system/xbin/bbconfig ]
++ ln -s /data/adb/ap/bin/busybox bbconfig
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/bbconfig
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/bbconfig ]
++ '[' '!' -x /system/xbin/beep ]
++ ln -s /data/adb/ap/bin/busybox beep
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/beep
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/beep ]
++ '[' '!' -x /system/xbin/blkdiscard ]
++ ln -s /data/adb/ap/bin/busybox blkdiscard
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/blkdiscard
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/blkdiscard ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/blkdiscard
++ '[' '!' -x /system/xbin/blkid ]
++ ln -s /data/adb/ap/bin/busybox blkid
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/blkid
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/blkid ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/blkid
++ '[' '!' -x /system/xbin/blockdev ]
++ ln -s /data/adb/ap/bin/busybox blockdev
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/blockdev
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/blockdev ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/blockdev
++ '[' '!' -x /system/xbin/brctl ]
++ ln -s /data/adb/ap/bin/busybox brctl
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/brctl
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/brctl ]
++ '[' '!' -x /system/xbin/bunzip2 ]
++ ln -s /data/adb/ap/bin/busybox bunzip2
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/bunzip2
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/bunzip2 ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/bunzip2
++ '[' '!' -x /system/xbin/bzcat ]
++ ln -s /data/adb/ap/bin/busybox bzcat
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/bzcat
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/bzcat ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/bzcat
++ '[' '!' -x /system/xbin/bzip2 ]
++ ln -s /data/adb/ap/bin/busybox bzip2
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/bzip2
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/bzip2 ]
++ '[' '!' -x /system/xbin/cal ]
++ ln -s /data/adb/ap/bin/busybox cal
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/cal
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/cal ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/cal
++ '[' '!' -x /system/xbin/cat ]
++ ln -s /data/adb/ap/bin/busybox cat
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/cat
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/cat ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/cat
++ '[' '!' -x /system/xbin/chat ]
++ ln -s /data/adb/ap/bin/busybox chat
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/chat
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/chat ]
++ '[' '!' -x /system/xbin/chattr ]
++ ln -s /data/adb/ap/bin/busybox chattr
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/chattr
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/chattr ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/chattr
++ '[' '!' -x /system/xbin/chcon ]
++ ln -s /data/adb/ap/bin/busybox chcon
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/chcon
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/chcon ]
++ '[' '!' -x /system/xbin/chgrp ]
++ ln -s /data/adb/ap/bin/busybox chgrp
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/chgrp
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/chgrp ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/chgrp
++ '[' '!' -x /system/xbin/chmod ]
++ ln -s /data/adb/ap/bin/busybox chmod
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/chmod
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/chmod ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/chmod
++ '[' '!' -x /system/xbin/chown ]
++ ln -s /data/adb/ap/bin/busybox chown
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/chown
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/chown ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/chown
++ '[' '!' -x /system/xbin/chroot ]
++ ln -s /data/adb/ap/bin/busybox chroot
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/chroot
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/chroot ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/chroot
++ '[' '!' -x /system/xbin/chrt ]
++ ln -s /data/adb/ap/bin/busybox chrt
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/chrt
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/chrt ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/chrt
++ '[' '!' -x /system/xbin/chvt ]
++ ln -s /data/adb/ap/bin/busybox chvt
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/chvt
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/chvt ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/chvt
++ '[' '!' -x /system/xbin/cksum ]
++ ln -s /data/adb/ap/bin/busybox cksum
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/cksum
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/cksum ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/cksum
++ '[' '!' -x /system/xbin/clear ]
++ ln -s /data/adb/ap/bin/busybox clear
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/clear
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/clear ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/clear
++ '[' '!' -x /system/xbin/cmp ]
++ ln -s /data/adb/ap/bin/busybox cmp
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/cmp
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/cmp ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/cmp
++ '[' '!' -x /system/xbin/comm ]
++ ln -s /data/adb/ap/bin/busybox comm
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/comm
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/comm ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/comm
++ '[' '!' -x /system/xbin/conspy ]
++ ln -s /data/adb/ap/bin/busybox conspy
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/conspy
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/conspy ]
++ '[' '!' -x /system/xbin/cp ]
++ ln -s /data/adb/ap/bin/busybox cp
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/cp
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/cp ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/cp
++ '[' '!' -x /system/xbin/cpio ]
++ ln -s /data/adb/ap/bin/busybox cpio
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/cpio
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/cpio ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/cpio
++ '[' '!' -x /system/xbin/crc32 ]
++ ln -s /data/adb/ap/bin/busybox crc32
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/crc32
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/crc32 ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/crc32
++ '[' '!' -x /system/xbin/crond ]
++ ln -s /data/adb/ap/bin/busybox crond
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/crond
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/crond ]
++ '[' '!' -x /system/xbin/crontab ]
++ ln -s /data/adb/ap/bin/busybox crontab
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/crontab
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/crontab ]
++ '[' '!' -x /system/xbin/cttyhack ]
++ ln -s /data/adb/ap/bin/busybox cttyhack
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/cttyhack
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/cttyhack ]
++ '[' '!' -x /system/xbin/cut ]
++ ln -s /data/adb/ap/bin/busybox cut
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/cut
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/cut ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/cut
++ '[' '!' -x /system/xbin/date ]
++ ln -s /data/adb/ap/bin/busybox date
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/date
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/date ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/date
++ '[' '!' -x /system/xbin/dc ]
++ ln -s /data/adb/ap/bin/busybox dc
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/dc
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/dc ]
++ '[' '!' -x /system/xbin/dd ]
++ ln -s /data/adb/ap/bin/busybox dd
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/dd
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/dd ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/dd
++ '[' '!' -x /system/xbin/deallocvt ]
++ ln -s /data/adb/ap/bin/busybox deallocvt
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/deallocvt
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/deallocvt ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/deallocvt
++ '[' '!' -x /system/xbin/depmod ]
++ ln -s /data/adb/ap/bin/busybox depmod
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/depmod
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/depmod ]
++ '[' '!' -x /system/xbin/devmem ]
++ ln -s /data/adb/ap/bin/busybox devmem
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/devmem
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/devmem ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/devmem
++ '[' '!' -x /system/xbin/df ]
++ ln -s /data/adb/ap/bin/busybox df
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/df
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/df ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/df
++ '[' '!' -x /system/xbin/dhcprelay ]
++ ln -s /data/adb/ap/bin/busybox dhcprelay
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/dhcprelay
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/dhcprelay ]
++ '[' '!' -x /system/xbin/diff ]
++ ln -s /data/adb/ap/bin/busybox diff
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/diff
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/diff ]
++ '[' '!' -x /system/xbin/dirname ]
++ ln -s /data/adb/ap/bin/busybox dirname
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/dirname
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/dirname ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/dirname
++ '[' '!' -x /system/xbin/dmesg ]
++ ln -s /data/adb/ap/bin/busybox dmesg
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/dmesg
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/dmesg ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/dmesg
++ '[' '!' -x /system/xbin/dnsd ]
++ ln -s /data/adb/ap/bin/busybox dnsd
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/dnsd
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/dnsd ]
++ '[' '!' -x /system/xbin/dnsdomainname ]
++ ln -s /data/adb/ap/bin/busybox dnsdomainname
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/dnsdomainname
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/dnsdomainname ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/dnsdomainname
++ '[' '!' -x /system/xbin/dos2unix ]
++ ln -s /data/adb/ap/bin/busybox dos2unix
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/dos2unix
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/dos2unix ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/dos2unix
++ '[' '!' -x /system/xbin/du ]
++ ln -s /data/adb/ap/bin/busybox du
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/du
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/du ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/du
++ '[' '!' -x /system/xbin/dumpkmap ]
++ ln -s /data/adb/ap/bin/busybox dumpkmap
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/dumpkmap
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/dumpkmap ]
++ '[' '!' -x /system/xbin/dumpleases ]
++ ln -s /data/adb/ap/bin/busybox dumpleases
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/dumpleases
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/dumpleases ]
++ '[' '!' -x /system/xbin/echo ]
++ ln -s /data/adb/ap/bin/busybox echo
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/echo
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/echo ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/echo
++ '[' '!' -x /system/xbin/ed ]
++ ln -s /data/adb/ap/bin/busybox ed
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/ed
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/ed ]
++ '[' '!' -x /system/xbin/egrep ]
++ ln -s /data/adb/ap/bin/busybox egrep
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/egrep
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/egrep ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/egrep
++ '[' '!' -x /system/xbin/eject ]
++ ln -s /data/adb/ap/bin/busybox eject
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/eject
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/eject ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/eject
++ '[' '!' -x /system/xbin/env ]
++ ln -s /data/adb/ap/bin/busybox env
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/env
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/env ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/env
++ '[' '!' -x /system/xbin/ether-wake ]
++ ln -s /data/adb/ap/bin/busybox ether-wake
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/ether-wake
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/ether-wake ]
++ '[' '!' -x /system/xbin/expand ]
++ ln -s /data/adb/ap/bin/busybox expand
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/expand
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/expand ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/expand
++ '[' '!' -x /system/xbin/expr ]
++ ln -s /data/adb/ap/bin/busybox expr
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/expr
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/expr ]
++ '[' '!' -x /system/xbin/factor ]
++ ln -s /data/adb/ap/bin/busybox factor
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/factor
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/factor ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/factor
++ '[' '!' -x /system/xbin/fakeidentd ]
++ ln -s /data/adb/ap/bin/busybox fakeidentd
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/fakeidentd
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/fakeidentd ]
++ '[' '!' -x /system/xbin/false ]
++ ln -s /data/adb/ap/bin/busybox false
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/false
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/false ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/false
++ '[' '!' -x /system/xbin/fatattr ]
++ ln -s /data/adb/ap/bin/busybox fatattr
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/fatattr
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/fatattr ]
++ '[' '!' -x /system/xbin/fbset ]
++ ln -s /data/adb/ap/bin/busybox fbset
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/fbset
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/fbset ]
++ '[' '!' -x /system/xbin/fbsplash ]
++ ln -s /data/adb/ap/bin/busybox fbsplash
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/fbsplash
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/fbsplash ]
++ '[' '!' -x /system/xbin/fdflush ]
++ ln -s /data/adb/ap/bin/busybox fdflush
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/fdflush
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/fdflush ]
++ '[' '!' -x /system/xbin/fdformat ]
++ ln -s /data/adb/ap/bin/busybox fdformat
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/fdformat
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/fdformat ]
++ '[' '!' -x /system/xbin/fdisk ]
++ ln -s /data/adb/ap/bin/busybox fdisk
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/fdisk
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/fdisk ]
++ '[' '!' -x /system/xbin/fgconsole ]
++ ln -s /data/adb/ap/bin/busybox fgconsole
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/fgconsole
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/fgconsole ]
++ '[' '!' -x /system/xbin/fgrep ]
++ ln -s /data/adb/ap/bin/busybox fgrep
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/fgrep
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/fgrep ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/fgrep
++ '[' '!' -x /system/xbin/find ]
++ ln -s /data/adb/ap/bin/busybox find
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/find
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/find ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/find
++ '[' '!' -x /system/xbin/findfs ]
++ ln -s /data/adb/ap/bin/busybox findfs
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/findfs
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/findfs ]
++ '[' '!' -x /system/xbin/flash_eraseall ]
++ ln -s /data/adb/ap/bin/busybox flash_eraseall
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/flash_eraseall
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/flash_eraseall ]
++ '[' '!' -x /system/xbin/flash_lock ]
++ ln -s /data/adb/ap/bin/busybox flash_lock
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/flash_lock
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/flash_lock ]
++ '[' '!' -x /system/xbin/flash_unlock ]
++ ln -s /data/adb/ap/bin/busybox flash_unlock
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/flash_unlock
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/flash_unlock ]
++ '[' '!' -x /system/xbin/flock ]
++ ln -s /data/adb/ap/bin/busybox flock
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/flock
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/flock ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/flock
++ '[' '!' -x /system/xbin/fold ]
++ ln -s /data/adb/ap/bin/busybox fold
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/fold
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/fold ]
++ '[' '!' -x /system/xbin/free ]
++ ln -s /data/adb/ap/bin/busybox free
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/free
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/free ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/free
++ '[' '!' -x /system/xbin/freeramdisk ]
++ ln -s /data/adb/ap/bin/busybox freeramdisk
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/freeramdisk
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/freeramdisk ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/freeramdisk
++ '[' '!' -x /system/xbin/fsck ]
++ ln -s /data/adb/ap/bin/busybox fsck
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/fsck
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/fsck ]
++ '[' '!' -x /system/xbin/fsck.minix ]
++ ln -s /data/adb/ap/bin/busybox fsck.minix
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/fsck.minix
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/fsck.minix ]
++ '[' '!' -x /system/xbin/fsfreeze ]
++ ln -s /data/adb/ap/bin/busybox fsfreeze
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/fsfreeze
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/fsfreeze ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/fsfreeze
++ '[' '!' -x /system/xbin/fstrim ]
++ ln -s /data/adb/ap/bin/busybox fstrim
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/fstrim
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/fstrim ]
++ '[' '!' -x /system/xbin/fsync ]
++ ln -s /data/adb/ap/bin/busybox fsync
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/fsync
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/fsync ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/fsync
++ '[' '!' -x /system/xbin/ftpd ]
++ ln -s /data/adb/ap/bin/busybox ftpd
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/ftpd
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/ftpd ]
++ '[' '!' -x /system/xbin/ftpget ]
++ ln -s /data/adb/ap/bin/busybox ftpget
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/ftpget
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/ftpget ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/ftpget
++ '[' '!' -x /system/xbin/ftpput ]
++ ln -s /data/adb/ap/bin/busybox ftpput
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/ftpput
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/ftpput ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/ftpput
++ '[' '!' -x /system/xbin/fuser ]
++ ln -s /data/adb/ap/bin/busybox fuser
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/fuser
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/fuser ]
++ '[' '!' -x /system/xbin/getenforce ]
++ ln -s /data/adb/ap/bin/busybox getenforce
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/getenforce
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/getenforce ]
++ '[' '!' -x /system/xbin/getopt ]
++ ln -s /data/adb/ap/bin/busybox getopt
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/getopt
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/getopt ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/getopt
++ '[' '!' -x /system/xbin/grep ]
++ ln -s /data/adb/ap/bin/busybox grep
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/grep
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/grep ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/grep
++ '[' '!' -x /system/xbin/groups ]
++ ln -s /data/adb/ap/bin/busybox groups
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/groups
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/groups ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/groups
++ '[' '!' -x /system/xbin/gunzip ]
++ ln -s /data/adb/ap/bin/busybox gunzip
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/gunzip
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/gunzip ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/gunzip
++ '[' '!' -x /system/xbin/gzip ]
++ ln -s /data/adb/ap/bin/busybox gzip
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/gzip
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/gzip ]
++ '[' '!' -x /system/xbin/hd ]
++ ln -s /data/adb/ap/bin/busybox hd
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/hd
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/hd ]
++ '[' '!' -x /system/xbin/hdparm ]
++ ln -s /data/adb/ap/bin/busybox hdparm
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/hdparm
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/hdparm ]
++ '[' '!' -x /system/xbin/head ]
++ ln -s /data/adb/ap/bin/busybox head
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/head
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/head ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/head
++ '[' '!' -x /system/xbin/hexdump ]
++ ln -s /data/adb/ap/bin/busybox hexdump
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/hexdump
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/hexdump ]
++ '[' '!' -x /system/xbin/hexedit ]
++ ln -s /data/adb/ap/bin/busybox hexedit
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/hexedit
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/hexedit ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/hexedit
++ '[' '!' -x /system/xbin/hostname ]
++ ln -s /data/adb/ap/bin/busybox hostname
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/hostname
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/hostname ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/hostname
++ '[' '!' -x /system/xbin/httpd ]
++ ln -s /data/adb/ap/bin/busybox httpd
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/httpd
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/httpd ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/httpd
++ '[' '!' -x /system/xbin/hush ]
++ ln -s /data/adb/ap/bin/busybox hush
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/hush
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/hush ]
++ '[' '!' -x /system/xbin/hwclock ]
++ ln -s /data/adb/ap/bin/busybox hwclock
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/hwclock
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/hwclock ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/hwclock
++ '[' '!' -x /system/xbin/id ]
++ ln -s /data/adb/ap/bin/busybox id
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/id
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/id ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/id
++ '[' '!' -x /system/xbin/ifconfig ]
++ ln -s /data/adb/ap/bin/busybox ifconfig
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/ifconfig
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/ifconfig ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/ifconfig
++ '[' '!' -x /system/xbin/ifdown ]
++ ln -s /data/adb/ap/bin/busybox ifdown
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/ifdown
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/ifdown ]
++ '[' '!' -x /system/xbin/ifenslave ]
++ ln -s /data/adb/ap/bin/busybox ifenslave
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/ifenslave
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/ifenslave ]
++ '[' '!' -x /system/xbin/ifplugd ]
++ ln -s /data/adb/ap/bin/busybox ifplugd
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/ifplugd
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/ifplugd ]
++ '[' '!' -x /system/xbin/ifup ]
++ ln -s /data/adb/ap/bin/busybox ifup
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/ifup
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/ifup ]
++ '[' '!' -x /system/xbin/inetd ]
++ ln -s /data/adb/ap/bin/busybox inetd
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/inetd
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/inetd ]
++ '[' '!' -x /system/xbin/inotifyd ]
++ ln -s /data/adb/ap/bin/busybox inotifyd
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/inotifyd
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/inotifyd ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/inotifyd
++ '[' '!' -x /system/xbin/insmod ]
++ ln -s /data/adb/ap/bin/busybox insmod
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/insmod
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/insmod ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/insmod
++ '[' '!' -x /system/xbin/install ]
++ ln -s /data/adb/ap/bin/busybox install
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/install
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/install ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/install
++ '[' '!' -x /system/xbin/ionice ]
++ ln -s /data/adb/ap/bin/busybox ionice
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/ionice
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/ionice ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/ionice
++ '[' '!' -x /system/xbin/iostat ]
++ ln -s /data/adb/ap/bin/busybox iostat
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/iostat
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/iostat ]
++ '[' '!' -x /system/xbin/ip ]
++ ln -s /data/adb/ap/bin/busybox ip
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/ip
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/ip ]
++ '[' '!' -x /system/xbin/ipaddr ]
++ ln -s /data/adb/ap/bin/busybox ipaddr
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/ipaddr
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/ipaddr ]
++ '[' '!' -x /system/xbin/ipcalc ]
++ ln -s /data/adb/ap/bin/busybox ipcalc
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/ipcalc
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/ipcalc ]
++ '[' '!' -x /system/xbin/ipcrm ]
++ ln -s /data/adb/ap/bin/busybox ipcrm
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/ipcrm
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/ipcrm ]
++ '[' '!' -x /system/xbin/ipcs ]
++ ln -s /data/adb/ap/bin/busybox ipcs
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/ipcs
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/ipcs ]
++ '[' '!' -x /system/xbin/iplink ]
++ ln -s /data/adb/ap/bin/busybox iplink
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/iplink
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/iplink ]
++ '[' '!' -x /system/xbin/ipneigh ]
++ ln -s /data/adb/ap/bin/busybox ipneigh
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/ipneigh
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/ipneigh ]
++ '[' '!' -x /system/xbin/iproute ]
++ ln -s /data/adb/ap/bin/busybox iproute
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/iproute
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/iproute ]
++ '[' '!' -x /system/xbin/iprule ]
++ ln -s /data/adb/ap/bin/busybox iprule
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/iprule
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/iprule ]
++ '[' '!' -x /system/xbin/iptunnel ]
++ ln -s /data/adb/ap/bin/busybox iptunnel
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/iptunnel
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/iptunnel ]
++ '[' '!' -x /system/xbin/kbd_mode ]
++ ln -s /data/adb/ap/bin/busybox kbd_mode
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/kbd_mode
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/kbd_mode ]
++ '[' '!' -x /system/xbin/kill ]
++ ln -s /data/adb/ap/bin/busybox kill
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/kill
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/kill ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/kill
++ '[' '!' -x /system/xbin/killall ]
++ ln -s /data/adb/ap/bin/busybox killall
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/killall
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/killall ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/killall
++ '[' '!' -x /system/xbin/killall5 ]
++ ln -s /data/adb/ap/bin/busybox killall5
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/killall5
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/killall5 ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/killall5
++ '[' '!' -x /system/xbin/klogd ]
++ ln -s /data/adb/ap/bin/busybox klogd
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/klogd
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/klogd ]
++ '[' '!' -x /system/xbin/less ]
++ ln -s /data/adb/ap/bin/busybox less
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/less
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/less ]
++ '[' '!' -x /system/xbin/link ]
++ ln -s /data/adb/ap/bin/busybox link
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/link
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/link ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/link
++ '[' '!' -x /system/xbin/ln ]
++ ln -s /data/adb/ap/bin/busybox ln
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/ln
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/ln ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/ln
++ '[' '!' -x /system/xbin/loadfont ]
++ ln -s /data/adb/ap/bin/busybox loadfont
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/loadfont
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/loadfont ]
++ '[' '!' -x /system/xbin/loadkmap ]
++ ln -s /data/adb/ap/bin/busybox loadkmap
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/loadkmap
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/loadkmap ]
++ '[' '!' -x /system/xbin/logread ]
++ ln -s /data/adb/ap/bin/busybox logread
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/logread
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/logread ]
++ '[' '!' -x /system/xbin/losetup ]
++ ln -s /data/adb/ap/bin/busybox losetup
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/losetup
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/losetup ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/losetup
++ '[' '!' -x /system/xbin/ls ]
++ ln -s /data/adb/ap/bin/busybox ls
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/ls
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/ls ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/ls
++ '[' '!' -x /system/xbin/lsattr ]
++ ln -s /data/adb/ap/bin/busybox lsattr
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/lsattr
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/lsattr ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/lsattr
++ '[' '!' -x /system/xbin/lsmod ]
++ ln -s /data/adb/ap/bin/busybox lsmod
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/lsmod
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/lsmod ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/lsmod
++ '[' '!' -x /system/xbin/lsof ]
++ ln -s /data/adb/ap/bin/busybox lsof
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/lsof
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/lsof ]
++ '[' '!' -x /system/xbin/lspci ]
++ ln -s /data/adb/ap/bin/busybox lspci
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/lspci
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/lspci ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/lspci
++ '[' '!' -x /system/xbin/lsscsi ]
++ ln -s /data/adb/ap/bin/busybox lsscsi
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/lsscsi
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/lsscsi ]
++ '[' '!' -x /system/xbin/lsusb ]
++ ln -s /data/adb/ap/bin/busybox lsusb
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/lsusb
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/lsusb ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/lsusb
++ '[' '!' -x /system/xbin/lzcat ]
++ ln -s /data/adb/ap/bin/busybox lzcat
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/lzcat
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/lzcat ]
++ '[' '!' -x /system/xbin/lzma ]
++ ln -s /data/adb/ap/bin/busybox lzma
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/lzma
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/lzma ]
++ '[' '!' -x /system/xbin/lzop ]
++ ln -s /data/adb/ap/bin/busybox lzop
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/lzop
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/lzop ]
++ '[' '!' -x /system/xbin/lzopcat ]
++ ln -s /data/adb/ap/bin/busybox lzopcat
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/lzopcat
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/lzopcat ]
++ '[' '!' -x /system/xbin/makedevs ]
++ ln -s /data/adb/ap/bin/busybox makedevs
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/makedevs
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/makedevs ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/makedevs
++ '[' '!' -x /system/xbin/makemime ]
++ ln -s /data/adb/ap/bin/busybox makemime
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/makemime
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/makemime ]
++ '[' '!' -x /system/xbin/man ]
++ ln -s /data/adb/ap/bin/busybox man
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/man
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/man ]
++ '[' '!' -x /system/xbin/md5sum ]
++ ln -s /data/adb/ap/bin/busybox md5sum
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/md5sum
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/md5sum ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/md5sum
++ '[' '!' -x /system/xbin/mesg ]
++ ln -s /data/adb/ap/bin/busybox mesg
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/mesg
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/mesg ]
++ '[' '!' -x /system/xbin/microcom ]
++ ln -s /data/adb/ap/bin/busybox microcom
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/microcom
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/microcom ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/microcom
++ '[' '!' -x /system/xbin/mim ]
++ ln -s /data/adb/ap/bin/busybox mim
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/mim
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/mim ]
++ '[' '!' -x /system/xbin/mkdir ]
++ ln -s /data/adb/ap/bin/busybox mkdir
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/mkdir
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/mkdir ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/mkdir
++ '[' '!' -x /system/xbin/mkdosfs ]
++ ln -s /data/adb/ap/bin/busybox mkdosfs
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/mkdosfs
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/mkdosfs ]
++ '[' '!' -x /system/xbin/mke2fs ]
++ ln -s /data/adb/ap/bin/busybox mke2fs
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/mke2fs
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/mke2fs ]
++ '[' '!' -x /system/xbin/mkfifo ]
++ ln -s /data/adb/ap/bin/busybox mkfifo
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/mkfifo
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/mkfifo ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/mkfifo
++ '[' '!' -x /system/xbin/mkfs.ext2 ]
++ ln -s /data/adb/ap/bin/busybox mkfs.ext2
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/mkfs.ext2
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/mkfs.ext2 ]
++ '[' '!' -x /system/xbin/mkfs.minix ]
++ ln -s /data/adb/ap/bin/busybox mkfs.minix
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/mkfs.minix
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/mkfs.minix ]
++ '[' '!' -x /system/xbin/mkfs.reiser ]
++ ln -s /data/adb/ap/bin/busybox mkfs.reiser
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/mkfs.reiser
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/mkfs.reiser ]
++ '[' '!' -x /system/xbin/mkfs.vfat ]
++ ln -s /data/adb/ap/bin/busybox mkfs.vfat
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/mkfs.vfat
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/mkfs.vfat ]
++ '[' '!' -x /system/xbin/mknod ]
++ ln -s /data/adb/ap/bin/busybox mknod
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/mknod
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/mknod ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/mknod
++ '[' '!' -x /system/xbin/mkswap ]
++ ln -s /data/adb/ap/bin/busybox mkswap
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/mkswap
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/mkswap ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/mkswap
++ '[' '!' -x /system/xbin/mktemp ]
++ ln -s /data/adb/ap/bin/busybox mktemp
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/mktemp
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/mktemp ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/mktemp
++ '[' '!' -x /system/xbin/modinfo ]
++ ln -s /data/adb/ap/bin/busybox modinfo
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/modinfo
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/modinfo ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/modinfo
++ '[' '!' -x /system/xbin/modprobe ]
++ ln -s /data/adb/ap/bin/busybox modprobe
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/modprobe
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/modprobe ]
++ '[' '!' -x /system/xbin/more ]
++ ln -s /data/adb/ap/bin/busybox more
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/more
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/more ]
++ '[' '!' -x /system/xbin/mount ]
++ ln -s /data/adb/ap/bin/busybox mount
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/mount
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/mount ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/mount
++ '[' '!' -x /system/xbin/mountpoint ]
++ ln -s /data/adb/ap/bin/busybox mountpoint
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/mountpoint
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/mountpoint ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/mountpoint
++ '[' '!' -x /system/xbin/mpstat ]
++ ln -s /data/adb/ap/bin/busybox mpstat
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/mpstat
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/mpstat ]
++ '[' '!' -x /system/xbin/mv ]
++ ln -s /data/adb/ap/bin/busybox mv
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/mv
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/mv ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/mv
++ '[' '!' -x /system/xbin/nameif ]
++ ln -s /data/adb/ap/bin/busybox nameif
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/nameif
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/nameif ]
++ '[' '!' -x /system/xbin/nanddump ]
++ ln -s /data/adb/ap/bin/busybox nanddump
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/nanddump
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/nanddump ]
++ '[' '!' -x /system/xbin/nandwrite ]
++ ln -s /data/adb/ap/bin/busybox nandwrite
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/nandwrite
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/nandwrite ]
++ '[' '!' -x /system/xbin/nbd-client ]
++ ln -s /data/adb/ap/bin/busybox nbd-client
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/nbd-client
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/nbd-client ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/nbd-client
++ '[' '!' -x /system/xbin/nc ]
++ ln -s /data/adb/ap/bin/busybox nc
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/nc
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/nc ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/nc
++ '[' '!' -x /system/xbin/netstat ]
++ ln -s /data/adb/ap/bin/busybox netstat
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/netstat
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/netstat ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/netstat
++ '[' '!' -x /system/xbin/nice ]
++ ln -s /data/adb/ap/bin/busybox nice
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/nice
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/nice ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/nice
++ '[' '!' -x /system/xbin/nl ]
++ ln -s /data/adb/ap/bin/busybox nl
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/nl
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/nl ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/nl
++ '[' '!' -x /system/xbin/nmeter ]
++ ln -s /data/adb/ap/bin/busybox nmeter
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/nmeter
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/nmeter ]
++ '[' '!' -x /system/xbin/nohup ]
++ ln -s /data/adb/ap/bin/busybox nohup
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/nohup
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/nohup ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/nohup
++ '[' '!' -x /system/xbin/nologin ]
++ ln -s /data/adb/ap/bin/busybox nologin
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/nologin
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/nologin ]
++ '[' '!' -x /system/xbin/nsenter ]
++ ln -s /data/adb/ap/bin/busybox nsenter
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/nsenter
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/nsenter ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/nsenter
++ '[' '!' -x /system/xbin/nslookup ]
++ ln -s /data/adb/ap/bin/busybox nslookup
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/nslookup
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/nslookup ]
++ '[' '!' -x /system/xbin/nuke ]
++ ln -s /data/adb/ap/bin/busybox nuke
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/nuke
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/nuke ]
++ '[' '!' -x /system/xbin/od ]
++ ln -s /data/adb/ap/bin/busybox od
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/od
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/od ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/od
++ '[' '!' -x /system/xbin/openvt ]
++ ln -s /data/adb/ap/bin/busybox openvt
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/openvt
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/openvt ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/openvt
++ '[' '!' -x /system/xbin/partprobe ]
++ ln -s /data/adb/ap/bin/busybox partprobe
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/partprobe
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/partprobe ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/partprobe
++ '[' '!' -x /system/xbin/paste ]
++ ln -s /data/adb/ap/bin/busybox paste
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/paste
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/paste ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/paste
++ '[' '!' -x /system/xbin/patch ]
++ ln -s /data/adb/ap/bin/busybox patch
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/patch
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/patch ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/patch
++ '[' '!' -x /system/xbin/pgrep ]
++ ln -s /data/adb/ap/bin/busybox pgrep
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/pgrep
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/pgrep ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/pgrep
++ '[' '!' -x /system/xbin/pidof ]
++ ln -s /data/adb/ap/bin/busybox pidof
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/pidof
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/pidof ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/pidof
++ '[' '!' -x /system/xbin/ping ]
++ ln -s /data/adb/ap/bin/busybox ping
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/ping
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/ping ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/ping
++ '[' '!' -x /system/xbin/ping6 ]
++ ln -s /data/adb/ap/bin/busybox ping6
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/ping6
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/ping6 ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/ping6
++ '[' '!' -x /system/xbin/pipe_progress ]
++ ln -s /data/adb/ap/bin/busybox pipe_progress
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/pipe_progress
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/pipe_progress ]
++ '[' '!' -x /system/xbin/pivot_root ]
++ ln -s /data/adb/ap/bin/busybox pivot_root
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/pivot_root
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/pivot_root ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/pivot_root
++ '[' '!' -x /system/xbin/pkill ]
++ ln -s /data/adb/ap/bin/busybox pkill
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/pkill
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/pkill ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/pkill
++ '[' '!' -x /system/xbin/pmap ]
++ ln -s /data/adb/ap/bin/busybox pmap
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/pmap
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/pmap ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/pmap
++ '[' '!' -x /system/xbin/popmaildir ]
++ ln -s /data/adb/ap/bin/busybox popmaildir
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/popmaildir
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/popmaildir ]
++ '[' '!' -x /system/xbin/poweroff ]
++ ln -s /data/adb/ap/bin/busybox poweroff
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/poweroff
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/poweroff ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/poweroff
++ '[' '!' -x /system/xbin/powertop ]
++ ln -s /data/adb/ap/bin/busybox powertop
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/powertop
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/powertop ]
++ '[' '!' -x /system/xbin/printenv ]
++ ln -s /data/adb/ap/bin/busybox printenv
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/printenv
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/printenv ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/printenv
++ '[' '!' -x /system/xbin/printf ]
++ ln -s /data/adb/ap/bin/busybox printf
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/printf
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/printf ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/printf
++ '[' '!' -x /system/xbin/ps ]
++ ln -s /data/adb/ap/bin/busybox ps
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/ps
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/ps ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/ps
++ '[' '!' -x /system/xbin/pscan ]
++ ln -s /data/adb/ap/bin/busybox pscan
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/pscan
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/pscan ]
++ '[' '!' -x /system/xbin/pstree ]
++ ln -s /data/adb/ap/bin/busybox pstree
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/pstree
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/pstree ]
++ '[' '!' -x /system/xbin/pwd ]
++ ln -s /data/adb/ap/bin/busybox pwd
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/pwd
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/pwd ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/pwd
++ '[' '!' -x /system/xbin/pwdx ]
++ ln -s /data/adb/ap/bin/busybox pwdx
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/pwdx
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/pwdx ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/pwdx
++ '[' '!' -x /system/xbin/raidautorun ]
++ ln -s /data/adb/ap/bin/busybox raidautorun
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/raidautorun
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/raidautorun ]
++ '[' '!' -x /system/xbin/rdate ]
++ ln -s /data/adb/ap/bin/busybox rdate
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/rdate
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/rdate ]
++ '[' '!' -x /system/xbin/rdev ]
++ ln -s /data/adb/ap/bin/busybox rdev
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/rdev
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/rdev ]
++ '[' '!' -x /system/xbin/readlink ]
++ ln -s /data/adb/ap/bin/busybox readlink
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/readlink
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/readlink ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/readlink
++ '[' '!' -x /system/xbin/readprofile ]
++ ln -s /data/adb/ap/bin/busybox readprofile
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/readprofile
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/readprofile ]
++ '[' '!' -x /system/xbin/realpath ]
++ ln -s /data/adb/ap/bin/busybox realpath
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/realpath
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/realpath ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/realpath
++ '[' '!' -x /system/xbin/reboot ]
++ ln -s /data/adb/ap/bin/busybox reboot
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/reboot
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/reboot ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/reboot
++ '[' '!' -x /system/xbin/reformime ]
++ ln -s /data/adb/ap/bin/busybox reformime
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/reformime
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/reformime ]
++ '[' '!' -x /system/xbin/renice ]
++ ln -s /data/adb/ap/bin/busybox renice
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/renice
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/renice ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/renice
++ '[' '!' -x /system/xbin/reset ]
++ ln -s /data/adb/ap/bin/busybox reset
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/reset
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/reset ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/reset
++ '[' '!' -x /system/xbin/resize ]
++ ln -s /data/adb/ap/bin/busybox resize
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/resize
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/resize ]
++ '[' '!' -x /system/xbin/resume ]
++ ln -s /data/adb/ap/bin/busybox resume
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/resume
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/resume ]
++ '[' '!' -x /system/xbin/rev ]
++ ln -s /data/adb/ap/bin/busybox rev
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/rev
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/rev ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/rev
++ '[' '!' -x /system/xbin/rfkill ]
++ ln -s /data/adb/ap/bin/busybox rfkill
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/rfkill
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/rfkill ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/rfkill
++ '[' '!' -x /system/xbin/rm ]
++ ln -s /data/adb/ap/bin/busybox rm
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/rm
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/rm ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/rm
++ '[' '!' -x /system/xbin/rmdir ]
++ ln -s /data/adb/ap/bin/busybox rmdir
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/rmdir
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/rmdir ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/rmdir
++ '[' '!' -x /system/xbin/rmmod ]
++ ln -s /data/adb/ap/bin/busybox rmmod
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/rmmod
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/rmmod ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/rmmod
++ '[' '!' -x /system/xbin/route ]
++ ln -s /data/adb/ap/bin/busybox route
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/route
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/route ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/route
++ '[' '!' -x /system/xbin/rtcwake ]
++ ln -s /data/adb/ap/bin/busybox rtcwake
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/rtcwake
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/rtcwake ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/rtcwake
++ '[' '!' -x /system/xbin/run-init ]
++ ln -s /data/adb/ap/bin/busybox run-init
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/run-init
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/run-init ]
++ '[' '!' -x /system/xbin/run-parts ]
++ ln -s /data/adb/ap/bin/busybox run-parts
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/run-parts
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/run-parts ]
++ '[' '!' -x /system/xbin/runcon ]
++ ln -s /data/adb/ap/bin/busybox runcon
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/runcon
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/runcon ]
++ '[' '!' -x /system/xbin/rx ]
++ ln -s /data/adb/ap/bin/busybox rx
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/rx
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/rx ]
++ '[' '!' -x /system/xbin/script ]
++ ln -s /data/adb/ap/bin/busybox script
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/script
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/script ]
++ '[' '!' -x /system/xbin/scriptreplay ]
++ ln -s /data/adb/ap/bin/busybox scriptreplay
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/scriptreplay
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/scriptreplay ]
++ '[' '!' -x /system/xbin/sed ]
++ ln -s /data/adb/ap/bin/busybox sed
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/sed
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/sed ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/sed
++ '[' '!' -x /system/xbin/seedrng ]
++ ln -s /data/adb/ap/bin/busybox seedrng
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/seedrng
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/seedrng ]
++ '[' '!' -x /system/xbin/selinuxenabled ]
++ ln -s /data/adb/ap/bin/busybox selinuxenabled
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/selinuxenabled
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/selinuxenabled ]
++ '[' '!' -x /system/xbin/sendmail ]
++ ln -s /data/adb/ap/bin/busybox sendmail
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/sendmail
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/sendmail ]
++ '[' '!' -x /system/xbin/seq ]
++ ln -s /data/adb/ap/bin/busybox seq
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/seq
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/seq ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/seq
++ '[' '!' -x /system/xbin/sestatus ]
++ ln -s /data/adb/ap/bin/busybox sestatus
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/sestatus
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/sestatus ]
++ '[' '!' -x /system/xbin/setconsole ]
++ ln -s /data/adb/ap/bin/busybox setconsole
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/setconsole
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/setconsole ]
++ '[' '!' -x /system/xbin/setenforce ]
++ ln -s /data/adb/ap/bin/busybox setenforce
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/setenforce
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/setenforce ]
++ '[' '!' -x /system/xbin/setfattr ]
++ ln -s /data/adb/ap/bin/busybox setfattr
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/setfattr
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/setfattr ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/setfattr
++ '[' '!' -x /system/xbin/setfont ]
++ ln -s /data/adb/ap/bin/busybox setfont
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/setfont
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/setfont ]
++ '[' '!' -x /system/xbin/setkeycodes ]
++ ln -s /data/adb/ap/bin/busybox setkeycodes
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/setkeycodes
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/setkeycodes ]
++ '[' '!' -x /system/xbin/setlogcons ]
++ ln -s /data/adb/ap/bin/busybox setlogcons
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/setlogcons
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/setlogcons ]
++ '[' '!' -x /system/xbin/setpriv ]
++ ln -s /data/adb/ap/bin/busybox setpriv
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/setpriv
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/setpriv ]
++ '[' '!' -x /system/xbin/setserial ]
++ ln -s /data/adb/ap/bin/busybox setserial
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/setserial
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/setserial ]
++ '[' '!' -x /system/xbin/setsid ]
++ ln -s /data/adb/ap/bin/busybox setsid
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/setsid
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/setsid ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/setsid
++ '[' '!' -x /system/xbin/setuidgid ]
++ ln -s /data/adb/ap/bin/busybox setuidgid
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/setuidgid
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/setuidgid ]
++ '[' '!' -x /system/xbin/sh ]
++ ln -s /data/adb/ap/bin/busybox sh
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/sh
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/sh ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/sh
++ '[' '!' -x /system/xbin/sha1sum ]
++ ln -s /data/adb/ap/bin/busybox sha1sum
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/sha1sum
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/sha1sum ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/sha1sum
++ '[' '!' -x /system/xbin/sha256sum ]
++ ln -s /data/adb/ap/bin/busybox sha256sum
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/sha256sum
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/sha256sum ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/sha256sum
++ '[' '!' -x /system/xbin/sha3sum ]
++ ln -s /data/adb/ap/bin/busybox sha3sum
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/sha3sum
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/sha3sum ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/sha3sum
++ '[' '!' -x /system/xbin/sha512sum ]
++ ln -s /data/adb/ap/bin/busybox sha512sum
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/sha512sum
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/sha512sum ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/sha512sum
++ '[' '!' -x /system/xbin/showkey ]
++ ln -s /data/adb/ap/bin/busybox showkey
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/showkey
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/showkey ]
++ '[' '!' -x /system/xbin/shred ]
++ ln -s /data/adb/ap/bin/busybox shred
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/shred
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/shred ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/shred
++ '[' '!' -x /system/xbin/shuf ]
++ ln -s /data/adb/ap/bin/busybox shuf
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/shuf
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/shuf ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/shuf
++ '[' '!' -x /system/xbin/slattach ]
++ ln -s /data/adb/ap/bin/busybox slattach
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/slattach
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/slattach ]
++ '[' '!' -x /system/xbin/sleep ]
++ ln -s /data/adb/ap/bin/busybox sleep
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/sleep
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/sleep ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/sleep
++ '[' '!' -x /system/xbin/smemcap ]
++ ln -s /data/adb/ap/bin/busybox smemcap
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/smemcap
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/smemcap ]
++ '[' '!' -x /system/xbin/sort ]
++ ln -s /data/adb/ap/bin/busybox sort
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/sort
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/sort ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/sort
++ '[' '!' -x /system/xbin/split ]
++ ln -s /data/adb/ap/bin/busybox split
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/split
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/split ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/split
++ '[' '!' -x /system/xbin/ssl_client ]
++ ln -s /data/adb/ap/bin/busybox ssl_client
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/ssl_client
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/ssl_client ]
++ '[' '!' -x /system/xbin/start-stop-daemon ]
++ ln -s /data/adb/ap/bin/busybox start-stop-daemon
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/start-stop-daemon
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/start-stop-daemon ]
++ '[' '!' -x /system/xbin/stat ]
++ ln -s /data/adb/ap/bin/busybox stat
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/stat
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/stat ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/stat
++ '[' '!' -x /system/xbin/strings ]
++ ln -s /data/adb/ap/bin/busybox strings
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/strings
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/strings ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/strings
++ '[' '!' -x /system/xbin/stty ]
++ ln -s /data/adb/ap/bin/busybox stty
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/stty
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/stty ]
++ '[' '!' -x /system/xbin/sum ]
++ ln -s /data/adb/ap/bin/busybox sum
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/sum
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/sum ]
++ '[' '!' -x /system/xbin/svc ]
++ ln -s /data/adb/ap/bin/busybox svc
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/svc
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/svc ]
++ '[' '!' -x /system/xbin/svok ]
++ ln -s /data/adb/ap/bin/busybox svok
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/svok
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/svok ]
++ '[' '!' -x /system/xbin/swapoff ]
++ ln -s /data/adb/ap/bin/busybox swapoff
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/swapoff
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/swapoff ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/swapoff
++ '[' '!' -x /system/xbin/swapon ]
++ ln -s /data/adb/ap/bin/busybox swapon
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/swapon
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/swapon ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/swapon
++ '[' '!' -x /system/xbin/switch_root ]
++ ln -s /data/adb/ap/bin/busybox switch_root
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/switch_root
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/switch_root ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/switch_root
++ '[' '!' -x /system/xbin/sync ]
++ ln -s /data/adb/ap/bin/busybox sync
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/sync
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/sync ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/sync
++ '[' '!' -x /system/xbin/sysctl ]
++ ln -s /data/adb/ap/bin/busybox sysctl
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/sysctl
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/sysctl ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/sysctl
++ '[' '!' -x /system/xbin/syslogd ]
++ ln -s /data/adb/ap/bin/busybox syslogd
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/syslogd
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/syslogd ]
++ '[' '!' -x /system/xbin/tac ]
++ ln -s /data/adb/ap/bin/busybox tac
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/tac
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/tac ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/tac
++ '[' '!' -x /system/xbin/tail ]
++ ln -s /data/adb/ap/bin/busybox tail
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/tail
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/tail ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/tail
++ '[' '!' -x /system/xbin/tar ]
++ ln -s /data/adb/ap/bin/busybox tar
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/tar
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/tar ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/tar
++ '[' '!' -x /system/xbin/tc ]
++ ln -s /data/adb/ap/bin/busybox tc
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/tc
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/tc ]
++ '[' '!' -x /system/xbin/tcpsvd ]
++ ln -s /data/adb/ap/bin/busybox tcpsvd
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/tcpsvd
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/tcpsvd ]
++ '[' '!' -x /system/xbin/tee ]
++ ln -s /data/adb/ap/bin/busybox tee
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/tee
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/tee ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/tee
++ '[' '!' -x /system/xbin/telnet ]
++ ln -s /data/adb/ap/bin/busybox telnet
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/telnet
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/telnet ]
++ '[' '!' -x /system/xbin/telnetd ]
++ ln -s /data/adb/ap/bin/busybox telnetd
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/telnetd
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/telnetd ]
++ '[' '!' -x /system/xbin/test ]
++ ln -s /data/adb/ap/bin/busybox test
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/test
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/test ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/test
++ '[' '!' -x /system/xbin/tftp ]
++ ln -s /data/adb/ap/bin/busybox tftp
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/tftp
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/tftp ]
++ '[' '!' -x /system/xbin/tftpd ]
++ ln -s /data/adb/ap/bin/busybox tftpd
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/tftpd
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/tftpd ]
++ '[' '!' -x /system/xbin/time ]
++ ln -s /data/adb/ap/bin/busybox time
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/time
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/time ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/time
++ '[' '!' -x /system/xbin/timeout ]
++ ln -s /data/adb/ap/bin/busybox timeout
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/timeout
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/timeout ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/timeout
++ '[' '!' -x /system/xbin/top ]
++ ln -s /data/adb/ap/bin/busybox top
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/top
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/top ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/top
++ '[' '!' -x /system/xbin/touch ]
++ ln -s /data/adb/ap/bin/busybox touch
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/touch
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/touch ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/touch
++ '[' '!' -x /system/xbin/tr ]
++ ln -s /data/adb/ap/bin/busybox tr
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/tr
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/tr ]
++ '[' '!' -x /system/xbin/traceroute ]
++ ln -s /data/adb/ap/bin/busybox traceroute
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/traceroute
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/traceroute ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/traceroute
++ '[' '!' -x /system/xbin/traceroute6 ]
++ ln -s /data/adb/ap/bin/busybox traceroute6
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/traceroute6
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/traceroute6 ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/traceroute6
++ '[' '!' -x /system/xbin/tree ]
++ ln -s /data/adb/ap/bin/busybox tree
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/tree
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/tree ]
++ '[' '!' -x /system/xbin/true ]
++ ln -s /data/adb/ap/bin/busybox true
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/true
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/true ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/true
++ '[' '!' -x /system/xbin/truncate ]
++ ln -s /data/adb/ap/bin/busybox truncate
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/truncate
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/truncate ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/truncate
++ '[' '!' -x /system/xbin/ts ]
++ ln -s /data/adb/ap/bin/busybox ts
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/ts
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/ts ]
++ '[' '!' -x /system/xbin/tsort ]
++ ln -s /data/adb/ap/bin/busybox tsort
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/tsort
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/tsort ]
++ '[' '!' -x /system/xbin/tty ]
++ ln -s /data/adb/ap/bin/busybox tty
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/tty
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/tty ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/tty
++ '[' '!' -x /system/xbin/ttysize ]
++ ln -s /data/adb/ap/bin/busybox ttysize
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/ttysize
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/ttysize ]
++ '[' '!' -x /system/xbin/tunctl ]
++ ln -s /data/adb/ap/bin/busybox tunctl
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/tunctl
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/tunctl ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/tunctl
++ '[' '!' -x /system/xbin/tune2fs ]
++ ln -s /data/adb/ap/bin/busybox tune2fs
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/tune2fs
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/tune2fs ]
++ '[' '!' -x /system/xbin/ubiattach ]
++ ln -s /data/adb/ap/bin/busybox ubiattach
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/ubiattach
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/ubiattach ]
++ '[' '!' -x /system/xbin/ubidetach ]
++ ln -s /data/adb/ap/bin/busybox ubidetach
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/ubidetach
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/ubidetach ]
++ '[' '!' -x /system/xbin/ubimkvol ]
++ ln -s /data/adb/ap/bin/busybox ubimkvol
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/ubimkvol
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/ubimkvol ]
++ '[' '!' -x /system/xbin/ubirename ]
++ ln -s /data/adb/ap/bin/busybox ubirename
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/ubirename
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/ubirename ]
++ '[' '!' -x /system/xbin/ubirmvol ]
++ ln -s /data/adb/ap/bin/busybox ubirmvol
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/ubirmvol
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/ubirmvol ]
++ '[' '!' -x /system/xbin/ubirsvol ]
++ ln -s /data/adb/ap/bin/busybox ubirsvol
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/ubirsvol
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/ubirsvol ]
++ '[' '!' -x /system/xbin/ubiupdatevol ]
++ ln -s /data/adb/ap/bin/busybox ubiupdatevol
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/ubiupdatevol
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/ubiupdatevol ]
++ '[' '!' -x /system/xbin/udhcpc ]
++ ln -s /data/adb/ap/bin/busybox udhcpc
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/udhcpc
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/udhcpc ]
++ '[' '!' -x /system/xbin/udhcpc6 ]
++ ln -s /data/adb/ap/bin/busybox udhcpc6
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/udhcpc6
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/udhcpc6 ]
++ '[' '!' -x /system/xbin/udhcpd ]
++ ln -s /data/adb/ap/bin/busybox udhcpd
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/udhcpd
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/udhcpd ]
++ '[' '!' -x /system/xbin/udpsvd ]
++ ln -s /data/adb/ap/bin/busybox udpsvd
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/udpsvd
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/udpsvd ]
++ '[' '!' -x /system/xbin/uevent ]
++ ln -s /data/adb/ap/bin/busybox uevent
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/uevent
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/uevent ]
++ '[' '!' -x /system/xbin/umount ]
++ ln -s /data/adb/ap/bin/busybox umount
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/umount
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/umount ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/umount
++ '[' '!' -x /system/xbin/uname ]
++ ln -s /data/adb/ap/bin/busybox uname
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/uname
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/uname ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/uname
++ '[' '!' -x /system/xbin/uncompress ]
++ ln -s /data/adb/ap/bin/busybox uncompress
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/uncompress
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/uncompress ]
++ '[' '!' -x /system/xbin/unexpand ]
++ ln -s /data/adb/ap/bin/busybox unexpand
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/unexpand
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/unexpand ]
++ '[' '!' -x /system/xbin/uniq ]
++ ln -s /data/adb/ap/bin/busybox uniq
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/uniq
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/uniq ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/uniq
++ '[' '!' -x /system/xbin/unix2dos ]
++ ln -s /data/adb/ap/bin/busybox unix2dos
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/unix2dos
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/unix2dos ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/unix2dos
++ '[' '!' -x /system/xbin/unlink ]
++ ln -s /data/adb/ap/bin/busybox unlink
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/unlink
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/unlink ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/unlink
++ '[' '!' -x /system/xbin/unlzma ]
++ ln -s /data/adb/ap/bin/busybox unlzma
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/unlzma
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/unlzma ]
++ '[' '!' -x /system/xbin/unlzop ]
++ ln -s /data/adb/ap/bin/busybox unlzop
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/unlzop
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/unlzop ]
++ '[' '!' -x /system/xbin/unshare ]
++ ln -s /data/adb/ap/bin/busybox unshare
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/unshare
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/unshare ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/unshare
++ '[' '!' -x /system/xbin/unxz ]
++ ln -s /data/adb/ap/bin/busybox unxz
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/unxz
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/unxz ]
++ '[' '!' -x /system/xbin/unzip ]
++ ln -s /data/adb/ap/bin/busybox unzip
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/unzip
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/unzip ]
++ '[' '!' -x /system/xbin/uptime ]
++ ln -s /data/adb/ap/bin/busybox uptime
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/uptime
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/uptime ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/uptime
++ '[' '!' -x /system/xbin/usleep ]
++ ln -s /data/adb/ap/bin/busybox usleep
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/usleep
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/usleep ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/usleep
++ '[' '!' -x /system/xbin/uudecode ]
++ ln -s /data/adb/ap/bin/busybox uudecode
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/uudecode
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/uudecode ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/uudecode
++ '[' '!' -x /system/xbin/uuencode ]
++ ln -s /data/adb/ap/bin/busybox uuencode
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/uuencode
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/uuencode ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/uuencode
++ '[' '!' -x /system/xbin/vconfig ]
++ ln -s /data/adb/ap/bin/busybox vconfig
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/vconfig
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/vconfig ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/vconfig
++ '[' '!' -x /system/xbin/vi ]
++ ln -s /data/adb/ap/bin/busybox vi
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/vi
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/vi ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/vi
++ '[' '!' -x /system/xbin/volname ]
++ ln -s /data/adb/ap/bin/busybox volname
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/volname
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/volname ]
++ '[' '!' -x /system/xbin/watch ]
++ ln -s /data/adb/ap/bin/busybox watch
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/watch
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/watch ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/watch
++ '[' '!' -x /system/xbin/watchdog ]
++ ln -s /data/adb/ap/bin/busybox watchdog
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/watchdog
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/watchdog ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/watchdog
++ '[' '!' -x /system/xbin/wc ]
++ ln -s /data/adb/ap/bin/busybox wc
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/wc
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/wc ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/wc
++ '[' '!' -x /system/xbin/wget ]
++ ln -s /data/adb/ap/bin/busybox wget
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/wget
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/wget ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/wget
++ '[' '!' -x /system/xbin/which ]
++ ln -s /data/adb/ap/bin/busybox which
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/which
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/which ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/which
++ '[' '!' -x /system/xbin/whoami ]
++ ln -s /data/adb/ap/bin/busybox whoami
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/whoami
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/whoami ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/whoami
++ '[' '!' -x /system/xbin/whois ]
++ ln -s /data/adb/ap/bin/busybox whois
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/whois
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/whois ]
++ '[' '!' -x /system/xbin/xargs ]
++ ln -s /data/adb/ap/bin/busybox xargs
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/xargs
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/xargs ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/xargs
++ '[' '!' -x /system/xbin/xxd ]
++ ln -s /data/adb/ap/bin/busybox xxd
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/xxd
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/xxd ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/xxd
++ '[' '!' -x /system/xbin/xz ]
++ ln -s /data/adb/ap/bin/busybox xz
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/xz
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/xz ]
++ '[' '!' -x /system/xbin/xzcat ]
++ ln -s /data/adb/ap/bin/busybox xzcat
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/xzcat
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/xzcat ]
++ '[' '!' -x /system/xbin/yes ]
++ ln -s /data/adb/ap/bin/busybox yes
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/yes
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/yes ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/yes
++ '[' '!' -x /system/xbin/zcat ]
++ ln -s /data/adb/ap/bin/busybox zcat
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/zcat
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/zcat ]
++ rm -f /data/adb/modules/ToyBox-Ext//system/xbin/zcat
++ '[' '!' -x /system/xbin/zcip ]
++ ln -s /data/adb/ap/bin/busybox zcip
++ Target=/data/adb/modules/ToyBox-Ext//system/xbin/zcip
++ '[' -h /data/adb/modules/ToyBox-Ext//system/xbin/zcip ]
++ chmod 755 '[' '[[' acpid adjtimex ar arch arp arping ascii ash awk base32 base64 basename bbconfig beep blkdiscard blkid blockdev brctl bunzip2 busybox bzcat bzip2 cal cat chat chattr chcon chgrp chmod chown chroot chrt chvt cksum clear cmp comm conspy cp cpio crc32 crond crontab cttyhack cut date dc dd deallocvt depmod devmem df dhcprelay diff dirname dmesg dnsd dnsdomainname dos2unix du dumpkmap dumpleases echo ed egrep eject env ether-wake expand expr factor fakeidentd false fatattr fbset fbsplash fdflush fdformat fdisk fgconsole fgrep find findfs flash_eraseall flash_lock flash_unlock flock fold free freeramdisk fsck fsck.minix fsfreeze fstrim fsync ftpd ftpget ftpput fuser getenforce getopt grep groups gunzip gzip hd hdparm head hexdump hexedit hostname httpd hush hwclock id ifconfig ifdown ifenslave ifplugd ifup inetd inotifyd insmod install ionice iostat ip ipaddr ipcalc ipcrm ipcs iplink ipneigh iproute iprule iptunnel kbd_mode kill killall killall5 klogd less link ln loadfont loadkmap logread losetup ls lsattr lsmod lsof lspci lsscsi lsusb lzcat lzma lzop lzopcat makedevs makemime man md5sum mesg microcom mim mkdir mkdosfs mke2fs mkfifo mkfs.ext2 mkfs.minix mkfs.reiser mkfs.vfat mknod mkswap mktemp modinfo modprobe more mount mountpoint mpstat mv nameif nanddump nandwrite nbd-client nc netstat nice nl nmeter nohup nologin nsenter nslookup nuke od openvt partprobe paste patch pgrep pidof ping ping6 pipe_progress pivot_root pkill pmap popmaildir poweroff powertop printenv printf ps pscan pstree pwd pwdx raidautorun rdate rdev readlink readprofile realpath reboot reformime renice reset resize resume rev rfkill rm rmdir rmmod route rtcwake run-init run-parts runcon rx script scriptreplay sed seedrng selinuxenabled sendmail seq sestatus setconsole setenforce setfattr setfont setkeycodes setlogcons setpriv setserial setsid setuidgid sh sha1sum sha256sum sha3sum sha512sum showkey shred shuf slattach sleep smemcap sort split ssl_client start-stop-daemon stat strings stty sum svc svok swapoff swapon switch_root sync sysctl syslogd tac tail tar tc tcpsvd tee telnet telnetd test tftp tftpd time timeout top touch tr traceroute traceroute6 tree true truncate ts tsort tty ttysize tunctl tune2fs ubiattach ubidetach ubimkvol ubirename ubirmvol ubirsvol ubiupdatevol udhcpc udhcpc6 udhcpd udpsvd uevent umount uname uncompress unexpand uniq unix2dos unlink unlzma unlzop unshare unxz unzip uptime usleep uudecode uuencode vconfig vi volname watch watchdog wc wget which whoami whois xargs xxd xz xzcat yes zcat zcip
++ chcon u:object_r:system_file:s0 '[' '[[' acpid adjtimex ar arch arp arping ascii ash awk base32 base64 basename bbconfig beep blkdiscard blkid blockdev brctl bunzip2 busybox bzcat bzip2 cal cat chat chattr chcon chgrp chmod chown chroot chrt chvt cksum clear cmp comm conspy cp cpio crc32 crond crontab cttyhack cut date dc dd deallocvt depmod devmem df dhcprelay diff dirname dmesg dnsd dnsdomainname dos2unix du dumpkmap dumpleases echo ed egrep eject env ether-wake expand expr factor fakeidentd false fatattr fbset fbsplash fdflush fdformat fdisk fgconsole fgrep find findfs flash_eraseall flash_lock flash_unlock flock fold free freeramdisk fsck fsck.minix fsfreeze fstrim fsync ftpd ftpget ftpput fuser getenforce getopt grep groups gunzip gzip hd hdparm head hexdump hexedit hostname httpd hush hwclock id ifconfig ifdown ifenslave ifplugd ifup inetd inotifyd insmod install ionice iostat ip ipaddr ipcalc ipcrm ipcs iplink ipneigh iproute iprule iptunnel kbd_mode kill killall killall5 klogd less link ln loadfont loadkmap logread losetup ls lsattr lsmod lsof lspci lsscsi lsusb lzcat lzma lzop lzopcat makedevs makemime man md5sum mesg microcom mim mkdir mkdosfs mke2fs mkfifo mkfs.ext2 mkfs.minix mkfs.reiser mkfs.vfat mknod mkswap mktemp modinfo modprobe more mount mountpoint mpstat mv nameif nanddump nandwrite nbd-client nc netstat nice nl nmeter nohup nologin nsenter nslookup nuke od openvt partprobe paste patch pgrep pidof ping ping6 pipe_progress pivot_root pkill pmap popmaildir poweroff powertop printenv printf ps pscan pstree pwd pwdx raidautorun rdate rdev readlink readprofile realpath reboot reformime renice reset resize resume rev rfkill rm rmdir rmmod route rtcwake run-init run-parts runcon rx script scriptreplay sed seedrng selinuxenabled sendmail seq sestatus setconsole setenforce setfattr setfont setkeycodes setlogcons setpriv setserial setsid setuidgid sh sha1sum sha256sum sha3sum sha512sum showkey shred shuf slattach sleep smemcap sort split ssl_client start-stop-daemon stat strings stty sum svc svok swapoff swapon switch_root sync sysctl syslogd tac tail tar tc tcpsvd tee telnet telnetd test tftp tftpd time timeout top touch tr traceroute traceroute6 tree true truncate ts tsort tty ttysize tunctl tune2fs ubiattach ubidetach ubimkvol ubirename ubirmvol ubirsvol ubiupdatevol udhcpc udhcpc6 udhcpd udpsvd uevent umount uname uncompress unexpand uniq unix2dos unlink unlzma unlzop unshare unxz unzip uptime usleep uudecode uuencode vconfig vi volname watch watchdog wc wget which whoami whois xargs xxd xz xzcat yes zcat zcip
++ ls -lZ busybox
+lrwxrwxrwx    1 root     root     u:object_r:system_file:s0               24 Oct  3 06:14 busybox -> /data/adb/ap/bin/busybox
++ /data/adb/ap/bin/busybox
++ head -n 1
+BusyBox v1.36.1-Magisk (2023-09-02 05:30:11 PDT) multi-call binary.
++ ls -l
++ grep busybox
++ grep ^lr.x
++ rev
++ cut -d ' ' -f 3
++ rev
+[
+[[
+acpid
+adjtimex
+ar
+arch
+arp
+arping
+ascii
+ash
+awk
+base32
+base64
+basename
+bbconfig
+beep
+blkdiscard
+blkid
+blockdev
+brctl
+bunzip2
+busybox
+bzcat
+bzip2
+cal
+cat
+chat
+chattr
+chcon
+chgrp
+chmod
+chown
+chroot
+chrt
+chvt
+cksum
+clear
+cmp
+comm
+conspy
+cp
+cpio
+crc32
+crond
+crontab
+cttyhack
+cut
+date
+dc
+dd
+deallocvt
+depmod
+devmem
+df
+dhcprelay
+diff
+dirname
+dmesg
+dnsd
+dnsdomainname
+dos2unix
+du
+dumpkmap
+dumpleases
+echo
+ed
+egrep
+eject
+env
+ether-wake
+expand
+expr
+factor
+fakeidentd
+false
+fatattr
+fbset
+fbsplash
+fdflush
+fdformat
+fdisk
+fgconsole
+fgrep
+find
+findfs
+flash_eraseall
+flash_lock
+flash_unlock
+flock
+fold
+free
+freeramdisk
+fsck
+fsck.minix
+fsfreeze
+fstrim
+fsync
+ftpd
+ftpget
+ftpput
+fuser
+getenforce
+getopt
+grep
+groups
+gunzip
+gzip
+hd
+hdparm
+head
+hexdump
+hexedit
+hostname
+httpd
+hush
+hwclock
+id
+ifconfig
+ifdown
+ifenslave
+ifplugd
+ifup
+inetd
+inotifyd
+insmod
+install
+ionice
+iostat
+ip
+ipaddr
+ipcalc
+ipcrm
+ipcs
+iplink
+ipneigh
+iproute
+iprule
+iptunnel
+kbd_mode
+kill
+killall
+killall5
+klogd
+less
+link
+ln
+loadfont
+loadkmap
+logread
+losetup
+ls
+lsattr
+lsmod
+lsof
+lspci
+lsscsi
+lsusb
+lzcat
+lzma
+lzop
+lzopcat
+makedevs
+makemime
+man
+md5sum
+mesg
+microcom
+mim
+mkdir
+mkdosfs
+mke2fs
+mkfifo
+mkfs.ext2
+mkfs.minix
+mkfs.reiser
+mkfs.vfat
+mknod
+mkswap
+mktemp
+modinfo
+modprobe
+more
+mount
+mountpoint
+mpstat
+mv
+nameif
+nanddump
+nandwrite
+nbd-client
+nc
+netstat
+nice
+nl
+nmeter
+nohup
+nologin
+nsenter
+nslookup
+nuke
+od
+openvt
+partprobe
+paste
+patch
+pgrep
+pidof
+ping
+ping6
+pipe_progress
+pivot_root
+pkill
+pmap
+popmaildir
+poweroff
+powertop
+printenv
+printf
+ps
+pscan
+pstree
+pwd
+pwdx
+raidautorun
+rdate
+rdev
+readlink
+readprofile
+realpath
+reboot
+reformime
+renice
+reset
+resize
+resume
+rev
+rfkill
+rm
+rmdir
+rmmod
+route
+rtcwake
+run-init
+run-parts
+runcon
+rx
+script
+scriptreplay
+sed
+seedrng
+selinuxenabled
+sendmail
+seq
+sestatus
+setconsole
+setenforce
+setfattr
+setfont
+setkeycodes
+setlogcons
+setpriv
+setserial
+setsid
+setuidgid
+sh
+sha1sum
+sha256sum
+sha3sum
+sha512sum
+showkey
+shred
+shuf
+slattach
+sleep
+smemcap
+sort
+split
+ssl_client
+start-stop-daemon
+stat
+strings
+stty
+sum
+svc
+svok
+swapoff
+swapon
+switch_root
+sync
+sysctl
+syslogd
+tac
+tail
+tar
+tc
+tcpsvd
+tee
+telnet
+telnetd
+test
+tftp
+tftpd
+time
+timeout
+top
+touch
+tr
+traceroute
+traceroute6
+tree
+true
+truncate
+ts
+tsort
+tty
+ttysize
+tunctl
+tune2fs
+ubiattach
+ubidetach
+ubimkvol
+ubirename
+ubirmvol
+ubirsvol
+ubiupdatevol
+udhcpc
+udhcpc6
+udhcpd
+udpsvd
+uevent
+umount
+uname
+uncompress
+unexpand
+uniq
+unix2dos
+unlink
+unlzma
+unlzop
+unshare
+unxz
+unzip
+uptime
+usleep
+uudecode
+uuencode
+vconfig
+vi
+volname
+watch
+watchdog
+wc
+wget
+which
+whoami
+whois
+xargs
+xxd
+xz
+xzcat
+yes
+zcat
+zcip
++ ls -l
++ grep busybox
++ grep ^lr.x
++ wc -l
+363
++ set +x
