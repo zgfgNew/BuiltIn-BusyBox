@@ -11,13 +11,12 @@ MODDIR=${0%/*}
 LogFile="$MODDIR/service.log"
 exec 3>&1 4>&2 2>$LogFile 1>&2
 set -x
+
+# Log info
 date +%c
-
-# Log Magisk version and magisk --path
+whoami
 magisk -c
-magisk --path
-
-# Log dual-slots ROM info
+echo $APATCH
 getprop ro.product.cpu.abi
 getprop ro.product.cpu.abilist
 

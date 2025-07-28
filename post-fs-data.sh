@@ -12,9 +12,12 @@ LogFile="$MODDIR/post-fs-data.log"
 exec 3>&1 4>&2 2>$LogFile 1>&2
 set -x
 
-# Log Magisk version and magisk --path
+# Log info
+whoami
 magisk -c
-magisk --path
+echo $APATCH
+getprop ro.product.cpu.abi
+getprop ro.product.cpu.abilist
 
 # Clean-up old stuff
 rm -rf "$MODDIR/system"
@@ -42,16 +45,26 @@ then
   if [ $($BBBIN --list | wc -l) -ge 128 ] && [ ! -z "$($BBBIN | head -n 1 | grep -i $BB)" ]
   then
     chcon u:object_r:system_file:s0 $BBBIN
-    Applets=$BB$'\n'$($BBBIN --list)
   else
     rm -f $BBBIN
   fi
 fi
 
-# Otherwise use Magisk built-in busybox binary
+# Otherwise use Magisk, APatch or KSU built-in busybox binary
 if [ ! -x $BBBIN ]
 then
-  BBBIN=/data/adb/magisk/$BB
+  for Path in /data/adb/magisk/$BB /data/adb/ap/bin/$BB /data/adb/ksu/bin/$BB
+  do
+    if [ -x $Path ]
+    then
+      BBBIN=$Path
+      break
+    fi
+  done
+fi
+  
+if [ -x $BBBIN ]
+then
   $BBBIN --list | wc -l
   Applets=$BB$'\n'$($BBBIN --list)
 fi
